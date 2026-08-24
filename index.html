@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shifa — Creative Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="/img/capybara-icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Afacad&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+</head>
+
+<body>
+  <canvas id="bg"></canvas>
+  <div class="bg-diamond"></div>
+<div class="container">
+  <h1 class="title">Shifa</h1>
+  <p class="subtitle">Creative Multimedia Student</p>
+
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#works">Works</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#video">Video</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <p class="tagline">
+      I build calm digital spaces —<br>
+      where visuals, interaction, and meaning meet.
+    </p>
+  </section>
+
+  <!-- WORKS -->
+  <section id="works" class="section">
+    <h2>My Creations</h2>
+    <p class="section-desc">Things I’ve made across different mediums ✨</p>
+
+    <!-- FILTER -->
+    <div class="filter">
+      <button onclick="filterSelection('all')" class="active">All</button>
+      <button onclick="filterSelection('web')">Web</button>
+      <button onclick="filterSelection('novel')">Novel</button>
+      <button onclick="filterSelection('comic')">Comic</button>
+    </div>
+
+    <div class="works-grid">
+
+      <!-- WEB -->
+      <div class="project-card web">
+        <img src="/img/project/belowater-web.png" />
+        <h3>Belowater</h3>
+        <p>
+          Web project exploring immersive visual atmosphere.<br>
+          <span>Role:</span> UI design & front-end implementation
+        </p>
+        <a href="#" class="btn">View More</a>
+      </div>
+
+      <div class="project-card web">
+        <img src="/img/project/cyberstelk-web.png" />
+        <h3>Cyber Stelk</h3>
+        <p>
+          Experimental website with futuristic tone.<br>
+          <span>Role:</span> Layout design & styling
+        </p>
+        <a href="#" class="btn">View More</a>
+      </div>
+
+      <!-- NOVEL (contoh dulu) -->
+      <div class="project-card novel">
+        <img src="/img/project/front-picture.png" />
+        <h3>Visual Novel Project</h3>
+        <p>
+          Still in development<br>
+          <span>Genre:</span> Drama
+        </p>
+        <a href="#" class="btn">View More</a>
+      </div>
+
+      <!-- COMIC (contoh dulu) -->
+      <div class="project-card comic">
+        <img src="/img/project/front-picture.png" />
+        <h3>Mini Comic Project</h3>
+        <p>
+          Still in development<br>
+          <span>Style:</span> Slice of life
+        </p>
+        <a href="#" class="btn">View More</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+  <h2>About Me</h2>
+
+    <div class="about-layout">
+
+      <!-- HEADER -->
+      <div class="about-header">
+        <div class="emoji">ヾ(≧▽≦*)o</div>
+        <div class="title-line">★ welcome</div>
+      </div>
+
+      <!-- MAIN -->
+      <div class="about-main">
+
+        <!-- LABEL -->
+        <div class="about-label">
+          <p>user description</p>
+          <p>( ˘ ³˘)♡</p>
+          <p>likes calm things</p>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="about-content">
+          <div class="shape">twenty!</div>
+          <div class="text">
+            I’m a multimedia student who enjoys creating quiet, intentional digital experiences.
+          </div>
+        </div>
+
+        <!-- PHOTO -->
+        <div class="about-photo">
+          <img src="/img/shifa.jpeg" alt="Shifa">
+        </div>
+
+      </div>
+
+      <!-- TAG -->
+      <div class="about-tags">
+        <span class="tag">Spotify</span>
+        <span class="tag">Discord</span>
+        <span class="tag">Pinterest</span>
+        <span class="tag">Ko-hi</span>
+      </div>
+
+      <!-- BOTTOM -->
+      <div class="about-bottom">
+
+        <div class="about-box">
+          <h3>About Me</h3>
+          <p>
+            I like building soft digital spaces where visuals and emotions meet.
+          </p>
+        </div>
+
+        <div class="about-box">
+          <h3>More Info</h3>
+          <p>
+            I prefer slow work, quiet environments, and meaningful design over noise.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section">
+    <h2>Visual Archive</h2>
+    <p class="section-desc">Illustrations & visual explorations</p>
+
+    <div class="tabs">
+      <button class="tab-button active" data-tab="illustration">Illustration</button>
+      <button class="tab-button" data-tab="design">Design</button>
+    </div>
+    <div class="tab-content active" id="illustration">
+      <div class="image-grid">
+        <div class="gallery-item">
+          <img src="/img/art/alma-art.png" class="gallery-img" />
+          <span class="wm">Shifa ©</span>
+        </div>
+        <div class="gallery-item">
+          <img src="/img/art/anala-art.png" class="gallery-img" />
+          <span class="wm">Shifa ©</span>
+        </div>
+        <div class="gallery-item">
+          <img src="/img/art/asha-art.png" class="gallery-img" />
+          <span class="wm">Shifa ©</span>
+        </div>
+        <div class="gallery-item">
+          <img src="/img/art/bunga-art.png" class="gallery-img" />
+          <span class="wm">Shifa ©</span>
+        </div>
+        <div class="gallery-item">
+          <img src="/img/art/candy-mokke.png" class="gallery-img" />
+          <span class="wm">Shifa ©</span>
+        </div>
+        <div class="gallery-item">
+          <img src="/img/art/catomo-art.png" class="gallery-img" />
+          <span class="wm">Shifa ©</span>
+        </div>
+        <div class="gallery-item">
+          <img src="/img/art/chrome-art.png" class="gallery-img" />
+          <span class="wm">Shifa ©</span>
+        </div>
+        <div class="gallery-item">
+          <img src="/img/art/coffee-mokke.png" class="gallery-img" />
+          <span class="wm">Shifa ©</span>
+        </div>
+        <div class="gallery-item">
+          <img src="/img/art/drown-mokke.png" class="gallery-img" />
+          <span class="wm">Shifa ©</span>
+        </div>
+        <div class="gallery-item">
+          <img src="/img/art/emie-art.png" class="gallery-img" />
+          <span class="wm">Shifa ©</span>
+        </div>
+        <div class="gallery-item">
+          <img src="/img/art/evie-art.png" class="gallery-img" />
+          <span class="wm">Shifa ©</span>
+        </div>
+        <div class="gallery-item">
+          <img src="/img/art/fan-art.png" class="gallery-img" />
+          <span class="wm">Shifa ©</span>
+        </div>
+        <div class="gallery-item">
+          <img src="/img/art/fei-art.png" class="gallery-img" />
+          <span class="wm">Shifa ©</span>
+        </div>
+        <div class="gallery-item">
+          <img src="/img/art/fiona-art.jpeg" class="gallery-img" />
+          <span class="wm">Shifa ©</span>
+        </div>
+        <div class="gallery-item">
+          <img src="/img/art/fizz-art.png" class="gallery-img" />
+          <span class="wm">Shifa ©</span>
+        </div>
+        <div class="gallery-item">
+          <img src="/img/art/glowp-art.png" class="gallery-img" />
+          <span class="wm">Shifa ©</span>
+        </div>
+        <div class="gallery-item">
+          <img src="/img/art/hlowp-art-white.png" class="gallery-img" />
+          <span class="wm">Shifa ©</span>
+        </div>
+        <div class="gallery-item">
+          <img src="/img/art/iokat-art.png" class="gallery-img" />
+          <span class="wm">Shifa ©</span>
+        </div>
+        <div class="gallery-item">
+          <img src="/img/art/kanna-art.jpeg" class="gallery-img" />
+          <span class="wm">Shifa ©</span>
+        </div>
+        <div class="gallery-item">
+          <img src="/img/art/karyn-art.png" class="gallery-img" />
+          <span class="wm">Shifa ©</span>
+        </div>
+        <div class="gallery-item">
+          <img src="/img/art/kio-art.png" class="gallery-img" />
+          <span class="wm">Shifa ©</span>
+        </div>
+        <div class="gallery-item">
+          <img src="/img/art/kumaseno-art.jpg" class="gallery-img" />
+          <span class="wm">Shifa ©</span>
+        </div>
+      </div>
+      <div class="load-more">
+        <button id="loadMoreBtn">Load More</button>
+      </div>
+    </div>
+
+    <div class="tab-content" id="design">
+      <div class="image-grid">
+        <div class="gallery-item">
+        <img src="/img/design/aesthetic-wpp.png" class="gallery-img" />
+        <span class="wm">Shifa ©</span>
+      </div>
+      <div class="gallery-item">
+        <img src="/img/design/daurah-tajwid-poster.png" class="gallery-img" />
+        <span class="wm">Shifa ©</span>
+      </div>
+      <div class="gallery-item">
+        <img src="/img/design/korean-aesthetic-wpp.png" class="gallery-img" />
+        <span class="wm">Shifa ©</span>
+      </div>
+      <div class="gallery-item">
+        <img src="/img/design/bookmark-design.png" class="gallery-img" />
+        <span class="wm">Shifa ©</span>
+      </div>
+      <div class="gallery-item">
+        <img src="/img/design/lanyard-design.png" class="gallery-img" />
+        <span class="wm">Shifa ©</span>
+      </div>
+      <div class="gallery-item">
+        <img src="/img/design/layout-design.png" class="gallery-img" />
+        <span class="wm">Shifa ©</span>
+      </div>
+        
+        <div class="gallery-item">
+          <div class="slider">
+            <img src="/img/design/idcard-front.png" class="slide active" />
+            <img src="/img/design/idcard-back.png" class="slide" />
+            <span class="wm">Shifa ©</span>
+            <button class="arrow left">‹</button>
+            <button class="arrow right">›</button>
+
+            <div class="counter">1/2</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="slider">
+            <img src="/img/design/insulin-brosur-front.png" class="slide active" />
+            <img src="/img/design/insulin-brosur-back.png" class="slide" />
+            <span class="wm">Shifa ©</span>
+            <button class="arrow left">‹</button>
+            <button class="arrow right">›</button>
+
+            <div class="counter">1/2</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="slider">
+            <img src="/img/design/medicine-brosur-front.png" class="slide active" />
+            <img src="/img/design/medicine-brosur-back.png" class="slide" />
+            <span class="wm">Shifa ©</span>
+            <button class="arrow left">‹</button>
+            <button class="arrow right">›</button>
+
+            <div class="counter">1/2</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="slider">
+            <img src="/img/design/YONCARD-001-Front.png" class="slide active" />
+            <img src="/img/design/YONCARD-001-Back.png" class="slide" />
+            <span class="wm">Shifa ©</span>
+            <button class="arrow left">‹</button>
+            <button class="arrow right">›</button>
+
+            <div class="counter">1/2</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="slider">
+            <img src="/img/design/YONCARD-002-Front.png" class="slide active" />
+            <img src="/img/design/YONCARD-002-Back.png" class="slide" />
+            <span class="wm">Shifa ©</span>
+            <button class="arrow left">‹</button>
+            <button class="arrow right">›</button>
+
+            <div class="counter">1/2</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="slider">
+            <img src="/img/design/YONCARD-005-Front.png" class="slide active" />
+            <img src="/img/design/YONCARD-005-Back.png" class="slide" />
+            <span class="wm">Shifa ©</span>
+            <button class="arrow left">‹</button>
+            <button class="arrow right">›</button>
+
+            <div class="counter">1/2</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="slider">
+            <img src="/img/design/YONCARD-006-Front.png" class="slide active" />
+            <img src="/img/design/YONCARD-006-Back.png" class="slide" />
+            <span class="wm">Shifa ©</span>
+            <button class="arrow left">‹</button>
+            <button class="arrow right">›</button>
+
+            <div class="counter">1/2</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="slider">
+            <img src="/img/design/YONCARD-POPIDOL-01-Front.png" class="slide active" />
+            <img src="/img/design/YONCARD-POPIDOL-01-Back.png" class="slide" />
+            <span class="wm">Shifa ©</span>
+            <button class="arrow left">‹</button>
+            <button class="arrow right">›</button>
+
+            <div class="counter">1/2</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="slider">
+            <img src="/img/design/YONCARD-POPIDOL-02-Front.png" class="slide active" />
+            <img src="/img/design/YONCARD-POPIDOL-02-Back.png" class="slide" />
+            <span class="wm">Shifa ©</span>
+            <button class="arrow left">‹</button>
+            <button class="arrow right">›</button>
+
+            <div class="counter">1/2</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="slider">
+            <img src="/img/design/YONCARD-POPIDOL-03-Front.png" class="slide active" />
+            <img src="/img/design/YONCARD-POPIDOL-03-Back.png" class="slide" />
+            <span class="wm">Shifa ©</span>
+            <button class="arrow left">‹</button>
+            <button class="arrow right">›</button>
+
+            <div class="counter">1/2</div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="slider">
+            <img src="/img/design/YONCARD-POPIDOL-04-Front.png" class="slide active" />
+            <img src="/img/design/YONCARD-POPIDOL-04-Back.png" class="slide" />
+            <span class="wm">Shifa ©</span>
+            <button class="arrow left">‹</button>
+            <button class="arrow right">›</button>
+
+            <div class="counter">1/2</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="load-more">
+        <button id="loadMoreBtn">Load More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- YOUTUBE -->
+<section id="video" class="section">
+  <h2>Video Moments</h2>
+  <p class="section-desc">Little pieces of my journey 🎥</p>
+
+  <div class="yt-wrapper">
+    <button class="yt-arrow left">‹</button>
+
+    <div class="yt-slider">
+      <div class="yt-track">
+        <a href="https://youtu.be/vOkFlAJD1O8?si=h7w18rXgdK50dapc"
+          target="_blank"
+          class="yt-card">
+
+          <div class="yt-thumb">
+            <img src="https://img.youtube.com/vi/vOkFlAJD1O8/hqdefault.jpg">
+            <div class="play-btn">▶</div>
+          </div>
+
+          <div class="yt-info">
+            <h4>Graduation Day - Vlog | PART 10</h4>
+            <p>Short description dikit aja</p>
+          </div>
+        </a>
+
+        <a href="https://youtu.be/oeYiI_FEbKU?si=VGdwxc021-1Gxh9M"
+          target="_blank"
+          class="yt-card">
+
+          <div class="yt-thumb">
+            <img src="https://img.youtube.com/vi/oeYiI_FEbKU/hqdefault.jpg" />
+            <div class="play-btn">▶</div>
+          </div>
+
+          <div class="yt-info">
+            <h4>Last day at school - Vlog | PART 9</h4>
+            <p>Short description dikit aja</p>
+          </div>
+        </a>
+        <a href="https://youtu.be/SjlvDunMWXA?si=XE1qjvH-RGUVwGM_"
+          target="_blank"
+          class="yt-card">
+
+          <div class="yt-thumb">
+            <img src="https://img.youtube.com/vi/SjlvDunMWXA/hqdefault.jpg" />
+            <div class="play-btn">▶</div>
+          </div>
+
+          <div class="yt-info">
+            <h4>Last Ceremony Angkatan 30 | SMK Telkom Makassar</h4>
+            <p>Short description dikit aja</p>
+          </div>
+        </a>
+        <a href="https://youtu.be/PxCEMadzdUQ?si=HWP3bpFwAF0fee_H"
+          target="_blank"
+          class="yt-card">
+
+          <div class="yt-thumb">
+            <img src="https://img.youtube.com/vi/PxCEMadzdUQ/hqdefault.jpg" />
+            <div class="play-btn">▶</div>
+          </div>
+
+          <div class="yt-info">
+            <h4>Jalan Jalan ke UNHAS - Vlog | PART 8</h4>
+            <p>Short description dikit aja</p>
+          </div>
+        </a>
+        <a href="https://youtu.be/gfyrWktcfgk?si=xPdIYCXp5iD_k47Z"
+          target="_blank"
+          class="yt-card">
+
+          <div class="yt-thumb">
+            <img src="https://img.youtube.com/vi/gfyrWktcfgk/hqdefault.jpg" />
+            <div class="play-btn">▶</div>
+          </div>
+
+          <div class="yt-info">
+            <h4>Kunjungan Expo Campus 2024 - Vlog | PART 7</h4>
+            <p>Short description dikit aja</p>
+          </div>
+        </a>
+        <a href="https://youtu.be/Zov1kkC-BxU?si=X6vhHiKyjoBROdF4"
+          target="_blank"
+          class="yt-card">
+
+          <div class="yt-thumb">
+            <img src="https://img.youtube.com/vi/Zov1kkC-BxU/hqdefault.jpg" />
+            <div class="play-btn">▶</div>
+          </div>
+
+          <div class="yt-info">
+            <h4>Event Jitsuri Bunkasai MAN 2 - Vlog | PART 6</h4>
+            <p>Short description dikit aja</p>
+          </div>
+        </a>
+        <a href="https://youtu.be/KMnR0gGJg0o?si=br9vBjAp75gFaiEz"
+          target="_blank"
+          class="yt-card">
+
+          <div class="yt-thumb">
+            <img src="https://img.youtube.com/vi/KMnR0gGJg0o/hqdefault.jpg" />
+            <div class="play-btn">▶</div>
+          </div>
+
+          <div class="yt-info">
+            <h4>Visitasi Kampus UC - Vlog | PART 5</h4>
+            <p>Short description dikit aja</p>
+          </div>
+        </a>
+        <a href="https://youtu.be/G7ozt9F6cY0?si=mjPKEV8VAjWe26mI"
+          target="_blank"
+          class="yt-card">
+
+          <div class="yt-thumb">
+            <img src="https://img.youtube.com/vi/G7ozt9F6cY0/hqdefault.jpg" />
+            <div class="play-btn">▶</div>
+          </div>
+
+          <div class="yt-info">
+            <h4>Liburan Ke Pantai Bosowa - Vlog | PART 4</h4>
+            <p>Short description dikit aja</p>
+          </div>
+        </a>
+        <a href="https://youtu.be/9TVb3jzYi8A?si=Bxr-SnrgRTrMOp3k"
+          target="_blank"
+          class="yt-card">
+
+          <div class="yt-thumb">
+            <img src="https://img.youtube.com/vi/9TVb3jzYi8A/hqdefault.jpg" />
+            <div class="play-btn">▶</div>
+          </div>
+
+          <div class="yt-info">
+            <h4>KKV Trans Studio Mall - Vlog | PART 3</h4>
+            <p>Short description dikit aja</p>
+          </div>
+        </a>
+        <a href="https://youtu.be/zWv2RbAOmog?si=OizJmE30bYGijgWU"
+          target="_blank"
+          class="yt-card">
+
+          <div class="yt-thumb">
+            <img src="https://img.youtube.com/vi/zWv2RbAOmog/hqdefault.jpg" />
+            <div class="play-btn">▶</div>
+          </div>
+
+          <div class="yt-info">
+            <h4>a day with us - Vlog | PART 2</h4>
+            <p>Short description dikit aja</p>
+          </div>
+        </a>
+        <a href="https://youtu.be/CBlpkNJAVc4?si=qQ8-qWid5fgpLQSC"
+          target="_blank"
+          class="yt-card">
+
+          <div class="yt-thumb">
+            <img src="https://img.youtube.com/vi/CBlpkNJAVc4/hqdefault.jpg" />
+            <div class="play-btn">▶</div>
+          </div>
+
+          <div class="yt-info">
+            <h4>Jalan Jalan Ke Gramedia Bareng Bestie - Vlog | PART 1</h4>
+            <p>Short description dikit aja</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <button class="yt-arrow right">›</button>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      
+      <div class="footer-left">
+        <h3>Shifa</h3>
+        <p>Feel free to reach out 🌙</p>
+        <p class="email">shifahana436@gmail.com</p>
+      </div>
+
+      <div class="footer-right">
+        <a href="https://www.instagram.com/shyf.hn_?igsh=MXQ0ZjF2c3kyeGU0eA==" target="_blank"><ion-icon name="logo-instagram"></ion-icon> Instagram</a>
+        <a href="https://www.linkedin.com/in/shifa-5519a0313" target="_blank"><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</a>
+        <a href="https://github.com/Shyfhn" target="_blank"><ion-icon name="logo-github"></ion-icon> GitHub</a>
+        <a href="https://x.com/Shyfhn" target="_blank">
+        <svg width="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle;">
+          <path d="M18.244 2H21.5l-7.5 8.57L22 22h-6.828l-5.35-6.965L3.5 22H.244l8.03-9.17L2 2h6.828l4.84 6.32L18.244 2z"/>
+        </svg>
+        X </a>
+      </div>
+
+    </div>
+
+    <p class="footer-bottom">Built slowly, under quiet thoughts 🌙</p>
+    <p class="footer-bottom">© 2026 Shifa. All rights reserved.</p>
+  </footer>
+  <div class="last-update">
+    Last Updated · 4 June 2026
+  </div>
+</div>
+
+<div class="overlay">
+  <div class="overlay-box">
+    
+    <!-- LEFT IMAGE -->
+    <div class="overlay-image">
+      <img id="overlay-img" src="">
+    </div>
+
+    <!-- RIGHT INFO -->
+    <div class="overlay-info">
+      <button id="close-btn">✕</button>
+
+      <h3 id="overlay-title">Untitled</h3>
+      <p id="overlay-desc">No description yet.</p>
+
+      <div class="overlay-meta">
+        <span>Illustration</span>
+        <span>2026</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+<script>
+function filterSelection(category) {
+  let cards = document.querySelectorAll(".project-card");
+  let buttons = document.querySelectorAll(".filter button");
+
+  // reset active button
+  buttons.forEach(btn => btn.classList.remove("active"));
+  event.target.classList.add("active");
+
+  cards.forEach(card => {
+    if (category === "all" || card.classList.contains(category)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+</script>
+</body>
+</html>
